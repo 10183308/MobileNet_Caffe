@@ -1,10 +1,4 @@
 net: "MN_train_128_1_train.prototxt"
-#base_lr: 0.01
-#momentum: 0.9
-#weight_decay: 0.0005
-#lr_policy: "fixed"
-#gamma: 0.000005
-#power: 0.75
 
 base_lr: 0.01
 lr_policy: "poly"
@@ -14,7 +8,7 @@ weight_decay: 0.0000005
 
 display: 20
 max_iter: 200000
-snapshot: 20#10000
+snapshot: 10000
 snapshot_prefix: "MN_train_128_1"
 
 solver_mode: GPU

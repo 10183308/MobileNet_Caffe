@@ -5,13 +5,13 @@ layer {
     top: "data"
     top: "label"
     data_param{
-        source: "/home2/boyang_pan/data/train_37w_lmdb"
+        source: "path/to/imagenet"
         backend: LMDB
-        batch_size: 1
+        batch_size: 256
     }
     transform_param {
         scale: 0.00390625
-        crop_size: 128
+        crop_size: 224
         mirror: true
     }
     include: { phase: TRAIN }
